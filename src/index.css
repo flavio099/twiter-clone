@@ -1,0 +1,610 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+ 
+body{
+    background-color:black;
+}
+/*  style-principalDiv*/
+
+.classMain{
+    display: flex;
+    width:100%;
+}
+/*  style-sibeBar*/
+
+
+.sideBar{
+   display: flex;
+   flex-direction:column; 
+   justify-content: flex-end;
+   align-items: flex-end;
+   gap:20px;
+   padding-top:10px;
+   width: 30%;
+   height:100% ;
+}
+.sideBar-1{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:20px;
+    width: 50%;
+    
+   
+}
+.sideBar-2{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    width: 50%;
+    height: 540px;
+   
+}
+.sidebar1{ 
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 70%;
+    height: 50%;
+}
+.one{
+ display: flex;
+ gap:10px;
+ width: 100%;  
+}
+
+.one-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.one-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.two{
+ display: flex;
+ gap:10px;
+ width: 100%;  
+}
+
+.two-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.two-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.three{
+    display: flex;
+    gap:10px;
+    width: 100%;   
+}
+
+.three-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.three-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.four{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+   
+    width: 100%;  
+}
+.four-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.four-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+
+
+.five{
+    display: flex;
+    gap:10px;
+    width: 100%;  
+}
+.five-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.five-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.six{
+    display: flex;
+    gap:10px;
+    width: 100%;   
+}
+.six-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.six-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.sevenn{
+    display: flex;
+    gap:10px;
+    width: 100%;  
+}
+.sevenn-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.sevenn-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.eightt{
+    display: flex;
+    gap:10px;
+    width: 100%;    
+}
+.eightt-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.eightt-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+.nine{
+    display: flex;
+    gap:10px;
+    width: 100%;  
+}
+.nine-1{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width:30% ;
+}
+.nine-2{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:70% ;
+}
+
+
+.sidebar2-btn{
+    
+   display: flex;
+    justify-content: center;
+    background-color: #1d9bf0;
+    padding: 10px;
+    width: 210px;
+    border-radius: 30px;
+}
+
+
+.sidebar2-profil{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.sidebar2-profil-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.sidebar2-profil-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left:5px;
+    width: 50%;
+    
+}
+.sidebar2-profil-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 20%;
+    
+}
+
+.sideBar-Home{
+ display: flex;
+ justify-content: flex-end;
+ gap:10px;
+}
+.sideBar-Explore{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.sideBar-Notification{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.sideBar-Messages{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.sideBar-Bookmarks{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.sideBar-Lists{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.sideBar-Profile{
+    display: flex;
+    justify-content: flex-end;
+}
+ span{
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ button{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+   
+ }
+/*  style-contenu*/
+
+.timeLine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  
+    border: 1px solid gray ;
+}
+
+.header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.header_title{
+    font-weight: bold;
+    color:white;
+    font-size: 16px;
+}
+
+.tweet-editor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid gray;
+}
+
+.avatar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:5px;
+    width: 10%;
+}
+
+.avatar-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height:50px;
+   
+}
+
+.profil{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.tweet-editor-form{
+   padding:5px;
+    width: 100%;
+    height: 100%;  
+}
+
+.tweet-editor-input{
+    display: flex;
+    padding-left: 10px;
+    width: 100%;
+    height: 60%;
+}
+
+textarea{
+    padding-top: 20px;
+    color:white;
+    width: 100%;
+    height:100%;
+    resize: none; 
+    background-color: black;
+  
+}
+
+.tweet-editor-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:5px;
+    width: 100%;
+    height: 40%;
+}
+
+.tweet-editor-actions{
+   display: flex; 
+   padding-top:5px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center; 
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    width:80px;
+    height: 30px;
+    background-color:#0e4d78;
+    font-size: 12px;
+}
+
+.tweets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid gray;
+   
+  
+}
+ .tweet{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+ 
+  
+ } 
+ .tweet-avatar{
+  width: 10%; 
+ } 
+
+ .tweet-avatar-picture{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width:100%;
+ }
+
+ .tweet-avatar-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:100%;
+ }
+
+
+ .tweet-content{
+    width: 90%;
+    gap:10px;
+ } 
+ .tweet-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ } 
+
+ .tweet-actions{
+    width: 100%;
+ } 
+ .tweet-title{
+    display: flex;
+    gap:3px;
+    width: 100%; 
+
+ } 
+ .verified{
+    display: flex;
+    flex-direction:row;
+    gap:3px;
+ }
+
+ .user{
+    display: flex;
+    gap:2px;
+    
+ }
+
+ h5{
+    color:white;
+    font-weight:bold;
+   
+ }
+ .tweet-text{
+    width: 100%;
+    font-weight: 500;
+ } 
+ p{
+    color:gray;
+ }
+ .tweet-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    width: 100%;
+    height: 50%;  
+ }
+
+ .tweet-image img{
+   width: 100%;
+    height: auto;
+  }
+
+ .tweet-title-author{
+    width: 100%;
+ } 
+
+ .tweet-title-details{
+    width: 100%;
+ } 
+
+ .tweet-action{
+    display: flex;
+    width: 100%;
+ } 
+
+ .tweet-action-btn{
+    display: flex;
+    width:25%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .tweet-action-btn-span{
+    padding-left: 10px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+ }
+
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-left: 20px;
+    gap:20px;
+    color:white;
+    width: 50%;
+   
+   
+}
+.follow-div1{
+    display: flex;
+    width: 50%;
+    height: 38px;
+    border: 1px solid #232739;;
+    border-radius:30px;
+    background-color:#232739;;
+}
+.follow-div1-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right:5px;
+    width: 90%;
+}
+.follow-div1-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.follow-div1-input-input{
+    width: 95%;
+    background-color:#232739;
+   
+}
+.follow-div2{
+    width: 50%;
+    height: 300px; 
+    border: 1px solid #232739;
+    background-color:#232739;
+    border-radius:10px;
+}
+
+.follow-div2-trendsforyou{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.follow-div2-trendsforyou-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.trendsforyou-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.follow-div3{
+    width: 50%; 
+    height: 300px;
+    border: 1px solid gray;
+}
