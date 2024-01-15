@@ -9,6 +9,7 @@
 }
  
 body{
+    margin-left: 70px;
     background-color:black;
 }
 /*  style-principalDiv*/
@@ -24,16 +25,21 @@ body{
    display: flex;
    flex-direction:column; 
    justify-content: flex-end;
-   align-items: flex-end;
+   align-items:flex-end;
    gap:20px;
    padding-top:10px;
-   width: 30%;
+   padding-right:10px;
+   width: 25%;
    height:100% ;
+   position: sticky;
+   top:0px ;
+   
 }
 .sideBar-1{
     display: flex;
     flex-direction:column;
     justify-content:flex-start;
+    align-items: center;
     gap:20px;
     width: 50%;
     
@@ -48,13 +54,7 @@ body{
     height: 540px;
    
 }
-.sidebar1{ 
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    width: 70%;
-    height: 50%;
-}
+
 .one{
  display: flex;
  gap:10px;
@@ -229,7 +229,7 @@ body{
 
 
 .sidebar2-profil{
-    display: flex;
+    display:flex;
     width: 100%;
     height: 60px;
 }
@@ -238,14 +238,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:5px;
     width: 30%;
+   
+}
+
+.sidebar2-profil-picture-image{
+    width: 100%;
+    height:60px;
+    object-fit: cover;
+    border-radius:50%;
 }
 
 .sidebar2-profil-info{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
+    flex-direction:column;
     padding-left:5px;
     width: 50%;
     
@@ -257,6 +264,21 @@ body{
     width: 20%;
     
 }
+
+span{
+    color:white;
+   
+ }
+ .sidebar-span-userName{
+    display:flex;
+ }
+
+ button{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+   
+ }
 
 .sideBar-Home{
  display: flex;
@@ -292,18 +314,7 @@ body{
     display: flex;
     justify-content: flex-end;
 }
- span{
-    color:white;
-    display: flex;
-    justify-content: flex-end;
- }
-
- button{
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-   
- }
+ 
 /*  style-contenu*/
 
 .timeLine{
@@ -311,7 +322,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;  
+    width: 30%;  
     border: 1px solid gray ;
 }
 
@@ -325,6 +336,9 @@ body{
     width: 100%;
     height: 50px;
     border-bottom: 1px solid gray;
+    position: sticky;
+    top:0px;
+   
 }
 
 .header_title{
@@ -357,14 +371,14 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height:50px;
+    height:40px;
    
 }
 
 .profil{
   width: 100%;
-  border: 1px solid white;
   border-radius: 50%;
+  object-fit:cover;
 }
 
 .tweet-editor-form{
@@ -380,6 +394,7 @@ body{
     height: 60%;
 }
 
+
 textarea{
     padding-top: 20px;
     color:white;
@@ -387,6 +402,7 @@ textarea{
     height:100%;
     resize: none; 
     background-color: black;
+    outline: none;
   
 }
 
@@ -509,6 +525,7 @@ textarea{
  .tweet-image img{
    width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 
  .tweet-title-author{
@@ -544,20 +561,20 @@ textarea{
     flex-direction: column;
     justify-content:flex-start;
     align-items:flex-start;
+    padding:5px;
     padding-left: 20px;
-    gap:20px;
+    gap:10px;
     color:white;
-    width: 50%;
-   
-   
+    width:25%;
+    position: fixed;
 }
-.follow-div1{
+.follow-search{
     display: flex;
-    width: 50%;
-    height: 38px;
-    border: 1px solid #232739;;
+    width: 350px;
+    height: 42px;
+    border: 1px solid #232739;
     border-radius:30px;
-    background-color:#232739;;
+    background-color:#232739;
 }
 .follow-div1-input{
     display: flex;
@@ -565,6 +582,8 @@ textarea{
     align-items: center;
     padding-right:5px;
     width: 90%;
+    outline: none;
+    border: none;
 }
 .follow-div1-icon{
     display: flex;
@@ -578,33 +597,114 @@ textarea{
    
 }
 .follow-div2{
-    width: 50%;
-    height: 300px; 
+    width: 350px;
+    height: 426px; 
     border: 1px solid #232739;
     background-color:#232739;
     border-radius:10px;
+    padding:10px;
 }
 
 .follow-div2-trendsforyou{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 7px;
+    
 }
 
 .follow-div2-trendsforyou-text{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding:7px;
+   
+    
+}
+.button-showmore{
+    display: flex;
+    justify-content: flex-start;
+    color: #1d9bf0;
+    font-size:15px;
+    font-weight: bold;
+    padding: 7px;
+  
 }
 
 .trendsforyou-text{
     display: flex;
     flex-direction: column;
+    gap:px;
     justify-content: flex-start;
     align-items: flex-start;
+    
 }
-.follow-div3{
-    width: 50%; 
-    height: 300px;
-    border: 1px solid gray;
+h4{
+    font-size: 19px;
+    font-weight: bold;
+}
+.trendsforyou-text-span1{
+    font-size: 13px;
+    font-weight:normal;
+    color: gray;
+}
+.trendsforyou-text-span2{
+    font-size: 15px;
+    font-weight:bold;
+    color:white;  
+}
+.follow-List{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 10px; 
+    height: 314px;
+    border-radius:10px;
+    border: 1px solid #232739;
+    background-color:#232739;
+   
+}
+.follow-body{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+   
+}
+.followme-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.followerName{
+    display: flex;
+    gap:5px;
+    color: #D9D9D9;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.followerEmail{
+    color: #6E767D;
+    font-size: 15px;
+    font-weight:lighter;
+}
+.btn-follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color:#0F1419;
+    border-radius: 50px;
+    padding:px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.follow-List-user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    color:#6E767D;
+    font-size: 13px;
+    font-weight: lighter;
 }
