@@ -223,7 +223,7 @@ body{
     justify-content: center;
     background-color: #1d9bf0;
     padding: 10px;
-    width: 210px;
+    width: 200px;
     border-radius: 30px;
 }
 
@@ -323,7 +323,8 @@ span{
     justify-content: center;
     align-items: center;
     width: 30%;  
-    border: 1px solid gray ;
+    border: 1px solid rgb(123, 123, 123) ;
+  
 }
 
 .header{ 
@@ -446,7 +447,7 @@ textarea{
   display: flex;
   flex-direction:row;
   width: 100%;
- 
+  border-bottom: 1px solid gray;
   
  } 
  .tweet-avatar{
@@ -594,6 +595,7 @@ textarea{
 .follow-div1-input-input{
     width: 95%;
     background-color:#232739;
+    outline: none;
    
 }
 .follow-div2{
