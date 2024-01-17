@@ -16,6 +16,7 @@ body{
 
 .classMain{
     display: flex;
+    gap: 5px;
     width:100%;
 }
 /*  style-sibeBar*/
@@ -40,185 +41,243 @@ body{
     flex-direction:column;
     justify-content:flex-start;
     align-items: center;
-    gap:20px;
+    gap:10px;
     width: 50%;
-    
-   
 }
+
+
+.one{
+    display: flex;
+    height:50px;
+    width: 100%;
+   }
+   .one:hover{
+       background-color: #181818;
+       border-radius:30px; 
+     
+   }
+   .one-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .one-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .two{
+    display: flex;
+    gap:20px;
+    height:50px;
+    width: 100%;
+   }
+   
+   .two:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .two-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .two-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .three{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .three:hover{
+       background-color: #181818;
+       border-radius:30px; 
+      
+   }
+   
+   .three-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .three-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .four{
+       display: flex;
+       gap:20px;
+       flex-direction: row;
+       height:50px;
+       width: 100%;
+   }
+   
+   .four:hover{
+       background-color: #181818;
+       border-radius:30px; 
+     
+   }
+   
+   .four-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .four-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   
+   
+   .five{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .five:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .five-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .five-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .six{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .six:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .six-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .six-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .sevenn{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .sevenn:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .sevenn-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .sevenn-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .eightt{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .eightt:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .eightt-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .eightt-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   .nine{
+       display: flex;
+       gap:20px;
+       height:50px;
+       width: 100%;
+   }
+   
+   .nine:hover{
+       background-color: #181818;
+       border-radius:30px; 
+   }
+   
+   .nine-1{
+       display: flex;
+       justify-content:flex-end;
+       align-items: center;
+       width:30% ;
+   }
+   .nine-2{
+       display: flex;
+       justify-content:flex-start;
+       align-items: center;
+       width:70% ;
+   }
+   
+   
+
 .sideBar-2{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
-    width: 50%;
-    height: 540px;
-   
+    width:50%;
+    height:380px;
 }
-
-.one{
- display: flex;
- gap:10px;
- width: 100%;  
-}
-
-.one-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.one-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.two{
- display: flex;
- gap:10px;
- width: 100%;  
-}
-
-.two-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.two-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.three{
-    display: flex;
-    gap:10px;
-    width: 100%;   
-}
-
-.three-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.three-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.four{
-    display: flex;
-    gap:10px;
-    flex-direction: row;
-   
-    width: 100%;  
-}
-.four-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.four-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-
-
-.five{
-    display: flex;
-    gap:10px;
-    width: 100%;  
-}
-.five-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.five-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.six{
-    display: flex;
-    gap:10px;
-    width: 100%;   
-}
-.six-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.six-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.sevenn{
-    display: flex;
-    gap:10px;
-    width: 100%;  
-}
-.sevenn-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.sevenn-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.eightt{
-    display: flex;
-    gap:10px;
-    width: 100%;    
-}
-.eightt-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.eightt-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-.nine{
-    display: flex;
-    gap:10px;
-    width: 100%;  
-}
-.nine-1{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width:30% ;
-}
-.nine-2{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    width:70% ;
-}
-
 
 .sidebar2-btn{
-    
    display: flex;
     justify-content: center;
     background-color: #1d9bf0;
@@ -227,25 +286,31 @@ body{
     border-radius: 30px;
 }
 
+.sidebar2-btn:hover{
+     background-color: #1A8CD8;
+ }
 
 .sidebar2-profil{
     display:flex;
-    width: 100%;
-    height: 60px;
+    gap: 2px;
+    width: 220px;
+    height:60px;
 }
 
+.sidebar2-profil:hover{
+    background-color: #181818;
+    border-radius:25px; 
+}
 .sidebar2-profil-picture{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:5px;
-    width: 30%;
-   
+    width:20%;
 }
 
 .sidebar2-profil-picture-image{
     width: 100%;
-    height:60px;
+    height:40px;
     object-fit: cover;
     border-radius:50%;
 }
@@ -253,31 +318,36 @@ body{
 .sidebar2-profil-info{
     display: flex;
     flex-direction:column;
-    padding-left:5px;
-    width: 50%;
+    justify-content:center;
+    align-items:flex-start;
+    padding-left:3px;
+    width: 70%;
     
 }
 .sidebar2-profil-icon{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 20%;
+    justify-content:flex-start;
+    align-items:center; 
+    width:10%;
     
 }
 
 span{
+    display: flex;
     color:white;
-   
+    font-size: 17px;
+    font-weight: bold;
  }
  .sidebar-span-userName{
     display:flex;
+    justify-content: center;
+    align-items: center;
  }
 
  button{
     color: white;
     display: flex;
-    justify-content: flex-end;
-   
+    
  }
 
 .sideBar-Home{
@@ -573,9 +643,9 @@ textarea{
     display: flex;
     width: 350px;
     height: 42px;
-    border: 1px solid #232739;
+    border: 1px solid #202327;
     border-radius:30px;
-    background-color:#232739;
+    background-color:#202327;
 }
 .follow-div1-input{
     display: flex;
@@ -594,17 +664,17 @@ textarea{
 }
 .follow-div1-input-input{
     width: 95%;
-    background-color:#232739;
+    background-color:#202327;
     outline: none;
    
 }
 .follow-div2{
     width: 350px;
     height: 426px; 
-    border: 1px solid #232739;
-    background-color:#232739;
+    border: 1px solid #202327;
+    background-color:#202327;
     border-radius:10px;
-    padding:10px;
+    padding:0px;
 }
 
 .follow-div2-trendsforyou{
@@ -617,10 +687,13 @@ textarea{
 .follow-div2-trendsforyou-text{
     display: flex;
     justify-content: space-between;
-    padding:7px;
-   
-    
+    padding:7px;  
 }
+
+.follow-div2-trendsforyou-text:hover{
+    background-color: #1D1F23;
+}
+
 .button-showmore{
     display: flex;
     justify-content: flex-start;
@@ -628,18 +701,26 @@ textarea{
     font-size:15px;
     font-weight: bold;
     padding: 7px;
-  
+    width: 100%;
+    height:81px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+
+.button-showmore:hover{
+    background-color: #1D1F23;
+}
 .trendsforyou-text{
     display: flex;
     flex-direction: column;
-    gap:px;
     justify-content: flex-start;
     align-items: flex-start;
-    
 }
 h4{
+    display: flex;
+    justify-content:flex-start;
+    justify-items: center;
     font-size: 19px;
     font-weight: bold;
 }
@@ -657,19 +738,23 @@ h4{
     display: flex;
     flex-direction: column;
     width: 350px;
-    padding: 10px; 
     height: 314px;
     border-radius:10px;
-    border: 1px solid #232739;
-    background-color:#232739;
-   
+    border: 1px solid #202327;
+    background-color:#202327;   
 }
+
 .follow-body{
     display: flex;
     gap: 20px;
-    padding: 10px;
-   
+    padding:10px;
 }
+
+.follow-body:hover{
+    background-color: #1D1F23;
+}
+
+
 .followme-btn{
     display: flex;
     justify-content: space-between;
