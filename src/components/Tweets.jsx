@@ -1,5 +1,15 @@
-
+import { useState } from "react"
  function Tweets(){
+   const[state,SetuseState]= useState(0)
+
+   const handlick = ()=>{
+    if(state==0){
+      SetuseState(state+1000)
+    }
+    else{
+     SetuseState(state-1)
+    } 
+   }
     return(
       
       <div className='tweet'>
@@ -29,7 +39,7 @@
                     <div className='tweet-action'>
                       <div className='tweet-action-btn'> <button><img src="src/pictures/comment.png" /> <span className='tweet-action-btn-span'>1</span> </button></div>
                       <div className='tweet-action-btn'> <button><img src="src/pictures/Buton.png" /> <span className='tweet-action-btn-span'>1</span> </button></div>
-                      <div className='tweet-action-btn'> <button><img src="src/pictures/react.png" /><span className='tweet-action-btn-span'>1</span> </button></div>
+                      <div className='tweet-action-btn'> <button onClick={handlick}><img src="src/pictures/react.png" /><span className='tweet-action-btn-span'> {state} </span> </button></div>
                       <div className='tweet-action-btn'> <button><img src= "src/pictures/download.png" /> <span className='tweet-action-btn-span'>1</span> </button></div>
                     </div>
                   </div>

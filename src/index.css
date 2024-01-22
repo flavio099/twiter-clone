@@ -18,6 +18,7 @@ body{
     display: flex;
     gap: 5px;
     width:100%;
+    padding-left:60px;
 }
 /*  style-sibeBar*/
 
@@ -30,7 +31,7 @@ body{
    gap:20px;
    padding-top:10px;
    padding-right:10px;
-   width: 25%;
+   width: 22.5%;
    height:100% ;
    position: sticky;
    top:0px ;
@@ -42,18 +43,18 @@ body{
     justify-content:flex-start;
     align-items: center;
     gap:10px;
-    width: 50%;
+    width: 100%;
 }
-
 
 .one{
     display: flex;
     height:50px;
-    width: 100%;
+    width: 160px;
    }
    .one:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
      
    }
    .one-1{
@@ -72,12 +73,13 @@ body{
     display: flex;
     gap:20px;
     height:50px;
-    width: 100%;
+    width: 160px;
    }
    
    .two:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
    }
    
    .two-1{
@@ -96,12 +98,13 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .three:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
       
    }
    
@@ -122,12 +125,13 @@ body{
        gap:20px;
        flex-direction: row;
        height:50px;
-       width: 100%;
+       width: 170px;
    }
    
    .four:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 170px;
      
    }
    
@@ -149,12 +153,13 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .five:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
    }
    
    .five-1{
@@ -173,12 +178,13 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .six:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
    }
    
    .six-1{
@@ -197,12 +203,13 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .sevenn:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
    }
    
    .sevenn-1{
@@ -221,12 +228,14 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .eightt:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
+    
    }
    
    .eightt-1{
@@ -245,19 +254,20 @@ body{
        display: flex;
        gap:20px;
        height:50px;
-       width: 100%;
+       width: 160px;
    }
    
    .nine:hover{
        background-color: #181818;
        border-radius:30px; 
+       width: 160px;
    }
    
    .nine-1{
        display: flex;
        justify-content:flex-end;
        align-items: center;
-       width:30% ;
+       width:30%;
    }
    .nine-2{
        display: flex;
@@ -273,7 +283,7 @@ body{
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
-    width:50%;
+    width:100%;
     height:380px;
 }
 
@@ -282,7 +292,7 @@ body{
     justify-content: center;
     background-color: #1d9bf0;
     padding: 10px;
-    width: 200px;
+    width: 180px;
     border-radius: 30px;
 }
 
@@ -293,8 +303,9 @@ body{
 .sidebar2-profil{
     display:flex;
     gap: 2px;
-    width: 220px;
-    height:60px;
+    width: 225px;
+    height:65px;
+    padding:5px;
 }
 
 .sidebar2-profil:hover{
@@ -392,7 +403,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;  
+    width: 35%;  
     border: 1px solid rgb(123, 123, 123) ;
   
 }
@@ -409,7 +420,6 @@ span{
     border-bottom: 1px solid gray;
     position: sticky;
     top:0px;
-   
 }
 
 .header_title{
@@ -636,7 +646,7 @@ textarea{
     padding-left: 20px;
     gap:10px;
     color:white;
-    width:25%;
+    width:22.5%;
     position: fixed;
 }
 .follow-search{
@@ -794,4 +804,163 @@ h4{
     color:#6E767D;
     font-size: 13px;
     font-weight: lighter;
+}
+
+
+/*  style-page_profil*/
+
+.IfonUserCount{
+    height: 50%;
+    width: 100%;
+}
+
+.btnReturn_UserNameAndNumberPost{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:10px;
+    padding-left: 10px;
+    height:48px;
+    background-color:black;
+    position: relative;
+}
+.UserNameAndNumberPost{
+    padding:10px;
+}
+.span-postnumber{
+    color:rgb(113, 118, 123);
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.grise{
+   background-color:#333639; 
+   height:170px;
+}
+.noire{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color:black; 
+    height: 254px;
+    border-bottom: 1px solid gray;
+ }
+
+ .editprofil{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px;
+   
+ }
+
+ .btn-editprofil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height:35px;
+    border: 1px solid gray ;
+    border-radius:20px;
+    font-weight:600;
+ }
+
+ .span-username{
+    font-size: 20px;
+    font-weight:bold;
+    padding-left: 10px;
+ }
+
+ .span-usermailadress, .span-userjoined , .following{
+    font-size: 15px;
+    font-weight:400;
+    color:rgb(113, 118, 123);
+    padding-left: 10px;
+ }
+
+ .following_follower{
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    padding-left: 10px;
+ }
+.following_follower_following , .following_follower_follower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.span-userjoined ,.div-userjoined{
+   display: flex;
+   gap:5px;
+   justify-content: flex-start;
+   align-items: center;
+   padding-left: 10px;
+}
+ 
+ .image-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    height:124px;
+    width:120px;
+    border-radius: 50%;
+    position:absolute;
+    top: 155px;
+ }
+
+ .image-profil-imageUser{
+    border-radius: 50%;
+    border:2px solid black;
+    height:124px;
+    width:100%;
+    object-fit: cover;
+ }
+.btn-replies-posts-media-likes{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px; 
+}
+
+.btn-posts,.btn-Replies,.btn-highlights,.btn-media,.btn-likes{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 80px;
+    height: 45px;
+    font-size: 15px;
+    font-size: 700;
+    color:#5B5E62;
+}
+
+.btn-posts:hover{
+    background-color: #333639;
+}
+
+.btn-Replies:hover{
+    background-color: #333639;
+}
+
+.btn-highlights:hover{
+    background-color: #333639;
+}
+
+.btn-media:hover{
+    background-color: #333639;
+}
+.btn-likes:hover{
+    background-color: #333639;
+}
+
+.WhoToFollow{
+    height: 50%;
+    width: 100%;
+}
+.whotofollow-title{
+    padding: 10px;
+    color:white;
+    font-size: 20px;
+    font-weight: 800;
 }
