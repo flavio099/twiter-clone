@@ -8,7 +8,7 @@ function Page_profile(){
         <>
         <div className="IfonUserCount">
         <div className="btnReturn_UserNameAndNumberPost">
-            <button onClick={()=>navigate(-1)}><img src="src/pictures/fleche-gauche.png" alt="retour" /></button>
+            <button className="btn-retour-pageprofil" onClick={()=>navigate(-1)}><img src="src/pictures/fleche-gauche.png" alt="retour" /></button>
             <div className="UserNameAndNumberPost"> <span className="span-username">Flavio Umberto</span><span className="span-postnumber">0 posts</span></div>
         </div>
         <div className="grise"></div>
