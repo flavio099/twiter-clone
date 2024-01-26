@@ -1,9 +1,32 @@
 import { Link } from "react-router-dom"
 import TweetEditorButtons from "./TweetEditorButtons"
 import Tweets from "./Tweets"
+import axios from "axios"
+import { useState,useEffect } from "react"
 
 function Home(){
-  
+
+ 
+  const[post,SetPost]=useState([])
+  useEffect(()=>{
+      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/posts").then((response)=>{
+        SetPost(response.data)
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+  },[])
+
+  const[users,SetUsers]=useState([])
+  useEffect(()=>{
+      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/users").then((response)=>{
+        SetUsers(response.data)
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+  },[])
+
   const array=[
   {
 
@@ -233,7 +256,6 @@ function Home(){
 
   }
 ]
-
    
     return(
         <>
@@ -255,7 +277,10 @@ function Home(){
           </div>
           <div className='tweets'>
            {
-            array.map((tab)=> <Tweets Flavien={tab}/> )
+            post.map((tab,index)=> <Tweets props={tab} key={index} /> )
+           },
+           {
+            post.map((tab,index)=> <Tweets props={tab} key={index} /> )
            }
           </div>
      

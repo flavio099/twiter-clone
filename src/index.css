@@ -498,6 +498,9 @@ textarea{
     height: 40%;
 }
 
+#type{
+    display: none;
+}
 .tweet-editor-actions{
    display: flex; 
    padding-top:5px;
