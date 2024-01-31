@@ -575,12 +575,14 @@ textarea{
 
  } 
  .verified{
+    padding-top:5px;
     display: flex;
     flex-direction:row;
     gap:3px;
  }
 
  .user{
+    padding-top:5px;
     display: flex;
     gap:2px;
     
@@ -853,14 +855,14 @@ h4{
 }
 .grise{
    background-color:#333639; 
-   height:140px;
+   height:170px;
 }
 .noire{
     display: flex;
     flex-direction: column;
     gap:10px;
     background-color:black; 
-    height: 284px;
+    height: 254px;
     border-bottom: 1px solid gray;
  }
 
@@ -981,4 +983,27 @@ h4{
     color:white;
     font-size: 20px;
     font-weight: 800;
+}
+
+/* nofoundpage */
+.nofoundpage{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.nofoundpage-image{
+   width: 500px; 
+   height: 400px;
+   object-fit: contain;
+} 
+
+.nofoundpage-text{
+    color:rgb(216, 216, 139);
+}
+.nofoundpage-text:hover{
+    color:rgb(97, 137, 97);
 }

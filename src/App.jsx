@@ -12,6 +12,7 @@ import { Routes,Route } from "react-router-dom"
 import Home from "./components/Home"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import PageNoFound from "./components/PageNoFound"
 
 
 
@@ -43,6 +44,7 @@ function App() {
      <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/Page_profile" element={<Page_profile/>}></Route>
+      <Route path="*" element={<PageNoFound/>}></Route>
      </Routes>
     </div>
     

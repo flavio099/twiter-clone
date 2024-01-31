@@ -6,27 +6,21 @@ import { useState,useEffect } from "react"
 
 function Home(){
 
- 
   const[post,SetPost]=useState([])
   useEffect(()=>{
-      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/posts").then((response)=>{
-        SetPost(response.data)
-      })
-      .catch((err)=>{
-        console.log(err);
-      })
-  },[])
+    axios.all([
+      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/posts"),
+      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+    ]).then(
+      axios.spread((posts,users)=>{
+        console.log(posts.data);
+        SetPost(posts.data)
 
-  const[users,SetUsers]=useState([])
-  useEffect(()=>{
-      axios.get("https://my-json-server.typicode.com/amare53/twiterdb/users").then((response)=>{
-        SetUsers(response.data)
+        console.log(users.data);
       })
-      .catch((err)=>{
-        console.log(err);
-      })
+    ).catch((err)=>console.log(err));
   },[])
-
+  
   const array=[
   {
 
@@ -259,7 +253,7 @@ function Home(){
    
     return(
         <>
-       
+        
         <div className='header'>
              <span className='header_title'>HOME</span>
                 <button> <img src="src/pictures/Timeline.png" alt="lumière"/></button>
@@ -277,14 +271,9 @@ function Home(){
           </div>
           <div className='tweets'>
            {
-            post.map((tab,index)=> <Tweets props={tab} key={index} /> )
-           },
-           {
-            post.map((tab,index)=> <Tweets props={tab} key={index} /> )
+            post.map((tab)=> <Tweets props={tab}  /> )
            }
           </div>
-     
-        
         </>
     )
 }

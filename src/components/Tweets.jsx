@@ -1,54 +1,44 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
+import axios from "axios"
 
-
- function Tweets({props}){ 
-  const array1 =[
-    {
-
-      "author_avatar": "https://picsum.photos/200?random=1604299903000",
-
-      "source": "Twitter",
-
-      "date": 1604299903000,
-
-      "favorites": "92746",
-
-      "id": "1323155810910982145",
-
-      "isVerified": true,
-
-      "replies": "24785",
-
-      "retweets": "16287",
-
-      "text": "...As I said at the debate – “Will you remember that Texas?Pennsylvania? Ohio? New Mexico?” I will always protect American Energy and American Jobs! Get out and VOTE #MAGA!"
-
-    }
-  ]
+  function Tweets({props}){ 
 
   const [State, SetuseState] = useState(false)
   const [valeur, Setvaleur] = useState(0)
   function handleclik() {
     SetuseState(!State)
     State ? Setvaleur(valeur - 1) : Setvaleur(valeur+1)
-  
    }
+
+   const [user,setUser]= useState([])
+   useEffect(()=>{
+    axios.get("https://my-json-server.typicode.com/amare53/twiterdb/users/"+ props.userId)
+
+    .then((response)=>{
+      setUser(response.data)
+      console.log(response.data);
+    })
+    .catch((err)=>{
+      console.log(err);
+    });
+   },[])
     return(
       
       <div className='tweet'>
           <div className='tweet-avatar'>
-                <div className='tweet-avatar-picture'><img  className="tweet-avatar-image" src={props.thumbnailUrl} alt="schedule"/></div>
+                <div className='tweet-avatar-picture'>
+                   <img  className="tweet-avatar-image" src={user.profil} alt="schedule"/>
+                </div>
               </div>
               <div className='tweet-content'>
                 <div className='tweet-body'>
                   <div className='tweet-title'> 
                   <div className='verified'>
-                    <h5>{props.username} </h5> 
-                    <img src= {props.isVerified} alt="" />
+                    <h5>{user.name} </h5> 
+                    <img src="src/pictures/verified.png" alt="" />
                     </div>
                     <div className='user'>
-                      <p>{props.email}</p>
-                      <p></p>
+                      <p>{user.email}</p>
                       <p> {props.date} </p>
                     </div>
                   </div>
@@ -56,7 +46,7 @@ import { useState } from "react"
                     <p> {props.body}</p>
                   </div>
                   <div className='tweet-image'>
-                    <img src= {props.url} />
+                  <img src= {props.url} /> 
                   </div>
                   <div className='tweet-actions'>
                     <div className='tweet-action'>
